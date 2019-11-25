@@ -1,12 +1,9 @@
 import {
-  Filter,
   repository,
 } from '@loopback/repository';
 import {
   post,
-  param,
   get,
-  getFilterSchemaFor,
   getModelSchemaRef,
   requestBody,
 } from '@loopback/rest';
@@ -55,9 +52,7 @@ export class TicketController {
       },
     },
   })
-  async find(
-    @param.query.object('filter', getFilterSchemaFor(Ticket)) filter?: Filter<Ticket>,
-  ): Promise<Ticket[]> {
-    return this.ticketRepository.find(filter);
+  async find(): Promise<Ticket[]> {
+    return this.ticketRepository.find();
   }
 }

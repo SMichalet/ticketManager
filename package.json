@@ -14,7 +14,8 @@
     "build": "tsc",
     "clean": "rimraf dist *.tsbuildinfo",
     "start": "npm run build && node -r source-map-support/register .",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "npm run clean && npm run build && mocha dist/__tests__"
   },
   "repository": {
     "type": "git"

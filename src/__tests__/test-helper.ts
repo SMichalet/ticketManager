@@ -1,4 +1,4 @@
-import {TicketApplication} from '../..';
+import {TicketApplication} from '../index';
 import {
   createRestAppClient,
   givenHttpServerConfig,
