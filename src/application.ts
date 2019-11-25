@@ -15,7 +15,7 @@ export class TicketApplication extends BootMixin(
 ) {
   constructor(options: ApplicationConfig = {}) {
     options.rest.port = 5000;
-    console.log(options);
+    options.rest.host = 'localhost';
     super(options);
 
     // Set up the custom sequence
