@@ -14,8 +14,6 @@ export class TicketApplication extends BootMixin(
   ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
-    options.rest.port = 5000;
-    options.rest.host = 'localhost';
     super(options);
 
     // Set up the custom sequence

@@ -4,7 +4,7 @@
 
 1. `npm install`
 2. `npm start`
-3. Server is running by default on `http://localhost:5000`
+3. Server is running by default on `http://localhost:5000` (set HOST and PORT environment variable to override this default configuration)
 
 ## Requirements 
 
